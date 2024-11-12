@@ -9,7 +9,6 @@ This project is an implementation of the classic Pacman game on an **FPGA**, dev
 - [Project Architecture](#project-architecture)
 - [Input and Output](#input-and-output)
 - [Include files](#include-files)
-- [Installation](#installation)
 
 
 
@@ -66,9 +65,4 @@ Here a quick presentation of most importortant modules:
 
 The `include_files` directory contains essential files for initializing images in memory. These files are used to load and configure images, making them accessible and manageable within the project.
 
-## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/pacman-fpga.git
-   cd pacman-fpga
