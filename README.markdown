@@ -1,6 +1,6 @@
 
 # Pacman SystemVerilog FPGA Project
-![PACMAN](https://imgur.com/a/ElWfQCZ.png)
+![PACMAN](https://i.imgur.com/6vHOu58.jpeg)
 This project is an implementation of the classic Pacman game on an **FPGA**, developed in **SystemVerilog** . The goal is to recreate Pacman gameplay with features such as character movement, wall detection, point collection, difficulty levels, and ghost management.
 
 ## Table of Contents
@@ -39,7 +39,7 @@ Here a quick presentation of most importortant modules:
 - `dots_display_logic`: Displays collectible points on the map and removes them as Pacman collects them.
 - `game_master`: Controls game logic, difficulty levels, adjusting ghost parameters as needed.
 
-![Architecture](https://imgur.com/a/WRWXUO2.png)
+![Architecture](https://i.imgur.com/mfEmpS1.png)
 
 ## Input and Output
  ### Input
