@@ -63,6 +63,6 @@ Here a quick presentation of most importortant modules:
 ## Include Files
 
 
-The `include_files` directory contains essential files for initializing images in memory. These files are used to load and configure images, making them accessible and manageable within the project.
+The `include_files` directory contains essential files for initializing images in memory. These files are used to load and configure images, making them accessible and manageable within the project. This files are generated thanks to Python script to convert image to rom values.
 
 
