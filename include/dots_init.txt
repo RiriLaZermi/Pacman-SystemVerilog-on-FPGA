@@ -1,0 +1,63 @@
+
+
+is_dot_tab[0] = 28'b0000000000000000000000000000;  // DerniÃ¨re ligne pleine de points
+
+is_dot_tab[1] = 28'b0111111111111111111111111110;  // TrentiÃ¨me ligne vide
+
+is_dot_tab[2] = 28'b0100000000001001000000000010;  // Vingt-neuviÃ¨me ligne pleine de points
+
+is_dot_tab[3] = 28'b0100000000001001000000000010;  // Vingt-huitiÃ¨me ligne avec points aux extrÃ©mitÃ©s
+
+is_dot_tab[4] = 28'b0111111001111001111001111110;  // Vingt-septiÃ¨me ligne similaire Ã�  la troisiÃ¨me
+
+is_dot_tab[5] = 28'b0001001001000000001001001000;  // Vingt-sixiÃ¨me ligne similaire Ã�  la deuxiÃ¨me
+
+is_dot_tab[6] = 28'b0001001001000000001001001000;  // Vingt-cinquiÃ¨me ligne similaire Ã�  la cinquiÃ¨me
+
+is_dot_tab[7] = 28'b0011001111111001111111001100;  // Vingt-quatriÃ¨me ligne similaire Ã�  la quatriÃ¨me
+
+is_dot_tab[8] = 28'b0100001000001001000001000010;  // Vingt-troisiÃ¨me ligne similaire Ã�  la troisiÃ¨me
+
+is_dot_tab[9] = 28'b0100001000001001000001000010;  // Vingt-deuxiÃ¨me ligne similaire Ã�  la deuxiÃ¨me
+
+is_dot_tab[10] = 28'b0111111111111001111111111110;  // Vingt-et-uniÃ¨me ligne pleine de points
+
+is_dot_tab[11] = 28'b0000001000000000000001000000;  // VingtiÃ¨me ligne vide
+
+is_dot_tab[12] = 28'b0000001000000000000001000000;  // Dix-neuviÃ¨me ligne pleine de points
+
+is_dot_tab[13] = 28'b0000001000000000000001000000;  // Dix-huitiÃ¨me ligne similaire Ã�  la deuxiÃ¨me
+
+is_dot_tab[14] = 28'b0000001000000000000001000000;  // Dix-septiÃ¨me ligne similaire Ã�  la troisiÃ¨me
+
+is_dot_tab[15] = 28'b0000001000000000000001000000;  // SeiziÃ¨me ligne similaire Ã�  la deuxiÃ¨me
+
+is_dot_tab[16] = 28'b0000001000000000000001000000;  // QuinziÃ¨me ligne similaire Ã�  la cinquiÃ¨me
+
+is_dot_tab[17] = 28'b0000001000000000000001000000;  // QuatorziÃ¨me ligne similaire Ã�  la quatriÃ¨me
+
+is_dot_tab[18] = 28'b0000001000000000000001000000;
+
+is_dot_tab[19] = 28'b0000001000000000000001000000;
+
+is_dot_tab[20] = 28'b0000001000000000000001000000;
+
+is_dot_tab[21]  = 28'b0000001000000000000001000000;  // DixiÃ¨me ligne vide (passage sans points)
+
+is_dot_tab[22]  = 28'b0111111001111001111001111110;  // NeuviÃ¨me ligne pleine de points
+
+is_dot_tab[23]  = 28'b0100001001000000001001000010;  // HuitiÃ¨me ligne avec points aux extrÃ©mitÃ©s
+
+is_dot_tab[24]  = 28'b0100001001000000001001000010;  // SeptiÃ¨me ligne similaire Ã�  la troisiÃ¨me
+
+is_dot_tab[25]  = 28'b0111111111111111111111111110;  // SixiÃ¨me ligne similaire Ã�  la deuxiÃ¨me
+
+is_dot_tab[26]  = 28'b0100001000001001000001000010;  // CinquiÃ¨me ligne avec points sur les murs
+
+is_dot_tab[27]  = 28'b0000001000001001000001000000;  // QuatriÃ¨me ligne avec points aux extrÃ©mitÃ©s et au centre
+
+is_dot_tab[28]  = 28'b0100001000001001000001000010;  // TroisiÃ¨me ligne avec motifs de points
+
+is_dot_tab[29]  = 28'b0111111111111001111111111110;  // DeuxiÃ¨me ligne avec des points aux extrÃ©mitÃ©s et au centre
+
+is_dot_tab[30]  = 28'b0000000000000000000000000000;  // PremiÃ¨re ligne sans points
