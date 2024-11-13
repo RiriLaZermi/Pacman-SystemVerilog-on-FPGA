@@ -31,7 +31,7 @@ output logic[11:0] rgb,
 output logic h_sync,
 output logic v_sync,
 output logic[6:0] SEG,
-output logic[6:0] AN
+output logic[7:0] AN
     );
     //------parameters
    
@@ -460,7 +460,8 @@ output logic[6:0] AN
     //-------Show score on FPGA 7-SEGMENT DISPLAY---- 
         score_printer_fpga scorea(.clk(clk25MHz),
         .reset(reset),
-        .points_counter(points_counter),
+        .score1(points_counter),
+        .score2(points2_counter),
         .SEG(SEG),
         .AN(AN));
     

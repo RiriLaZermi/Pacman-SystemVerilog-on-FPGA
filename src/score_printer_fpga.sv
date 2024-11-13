@@ -23,7 +23,8 @@
 module score_printer_fpga(
 input logic clk,
 input logic reset,
-input int points_counter,
+input int score1,
+input int score2,
 output logic[6:0] SEG,
 output logic[7:0] AN
 
@@ -37,6 +38,10 @@ output logic[7:0] AN
     logic[4:0] quo;
     int r;
     logic[4:0] digits[7];
+    
+    int score;
+    
+    assign score= score1 + score2;
     
     
     logic [31:0] powers_of_10 [6:0] = '{1_000_000, 100_000, 10_000, 1_000, 100, 10, 1};
@@ -79,7 +84,7 @@ output logic[7:0] AN
             for (int i =0;i<7;i++) digits[i]=0;
         end else begin
             if (counter_operation==0  && !calculating ) begin
-                r=points_counter; 
+                r=score; 
                 calculating<=1;
                 counter_operation<=6;         
             end else if (counter_operation <=6 && calculating)begin

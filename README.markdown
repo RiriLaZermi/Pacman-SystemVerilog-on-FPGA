@@ -1,4 +1,6 @@
 
+
+
 # Pacman SystemVerilog FPGA Project
 ![PACMAN](https://i.imgur.com/6vHOu58.jpeg)
 This project is an implementation of the classic Pacman game on an **FPGA**, developed in **SystemVerilog** . The goal is to recreate Pacman gameplay with features such as character movement, wall detection, point collection, difficulty levels, and ghost management.
@@ -8,7 +10,9 @@ This project is an implementation of the classic Pacman game on an **FPGA**, dev
 - [Features](#features)
 - [Project Architecture](#project-architecture)
 - [Input and Output](#input-and-output)
+- [Level Design](#level-design)
 - [Include files](#include-files)
+- [Notes](#notes)
 
 
 
@@ -60,9 +64,22 @@ Here a quick presentation of most importortant modules:
  -`AN` : AN signal control what 7 segment display to turn on
  #### Wave for sound generation
  -`wave` : wave square signal to control a passif buzzer to have some sound
+## Level Design
+
+### Difficulty increases gradually from level 1 to 5:
+- Scatter mode become shorter and Chase mode become longer.
+- Ghosts are released from the ghost house faster.
+- Ghosts are affraid less time.
+
+When level 6 is reached, ghost are in Chase mode permanently.
+
 ## Include Files
 
 
 The `include_files` directory contains essential files for initializing images in memory. These files are used to load and configure images, making them accessible and manageable within the project. This files are generated thanks to Python script to convert image to rom values.
+
+## Notes
+
+If you get this type of error : "size of variable 'rom' is too large to handle; the size of the variable is 1041600, the limit is 1000000". You can use this Tcl command : set_param synth.elaboration.rodinMoreOptions "rt::set_parameter var_size_limit 4194304". The "rom" variable containt all the information to draw the pacman map. 
 
 
